@@ -203,6 +203,7 @@ nav .logo{
     display: flex;
     height: 88%;
     align-items: center;
+    gap: 100px;
 }
 
 .box3 p{
@@ -213,6 +214,10 @@ nav .logo{
 .box3{
     margin-left: 20px;
     flex-basis: 50%;
+}
+.box3-1 img{
+    width: 500px;
+    height: 400px;
 }
 .box3 a{
     text-decoration: none;
