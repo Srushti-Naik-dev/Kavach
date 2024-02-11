@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
     font-family: 'EB Garamond',sans-serif;
 }
@@ -8,9 +8,13 @@
     background-color: #ffffff;
 }
 
+section{
+    height: 100%;
+    margin-bottom: 100px;
+}
 nav{
     width: 100%;
-    position:absolute;
+    /* position:absolute; */
     top:0;
     left: 0;
     padding: 20px 9%;
@@ -46,6 +50,7 @@ nav .logo{
     height: 95vh;
     padding: 0 5%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -55,8 +60,8 @@ nav .logo{
 #dp{
     mix-blend-mode: multiply;
     width:650px;
-    margin-right: -500px;
-    margin-bottom: -120px;
+    /* margin-right: -500px; */
+    /* margin-bottom: -120px; */
     border-radius: 0px 30px 0px 0px;
 }
 .content{
@@ -64,13 +69,13 @@ nav .logo{
 }
 
 .content .box {
-    position: relative;
-    width:550px;
+    /* position: relative; */
+    max-width:550px;
     height: 200px;
     padding: 10px;
     color: #002366;
-    margin-left: -580px;
-    margin-top: -220px;
+    /* margin-left: -580px;
+    margin-top: -220px; */
     
 }
 .box #h1{
@@ -93,7 +98,7 @@ nav .logo{
 
 .feature{
     width: 100%;
-    height:90vh;
+    /* height:90vh; */
     padding: 0 5%;
     display: flex;
     flex-direction: column;
@@ -104,7 +109,7 @@ nav .logo{
 }
 .feature .head{
     font-size: 50px;
-    margin-top: -380px;
+    /* margin-top: -380px; */
     padding: 20px 20px 20px 20px;
     color: #000000;
     font-family:'DM Serif Display', sans-serif;
@@ -121,35 +126,31 @@ nav .logo{
 .container{
     text-align: center;
     display: inline-flex;
-    gap:180px;
+    gap:100px;
     
 }
 .container .box1{
-    margin-left: -380px;
+    /* margin-left: -380px; */
     width: 300px;
     height: 350px;
-    margin-bottom: -350px;
+    /* margin-bottom: -350px; */
 }
 
 #fea1img{
-    position: relative;
+    /* position: relative; */
     width:400px;
-    margin-left: -400px;
-    margin-bottom: -350px;
     border-radius: 23px;
     mix-blend-mode: multiply;
 } 
 #fea2img{
-    position: relative;
+    /* position: relative; */
     width:400px;
-    margin-right: -400px;
-    margin-bottom: -350px;
     border-radius: 23px;
     mix-blend-mode: multiply;
 } 
 #user{
     width: 100%;
-    height: 85vh;
+    /* height: 85vh; */
     padding: 0 5%;
     display: flex;
     flex-direction: column;
@@ -165,26 +166,23 @@ nav .logo{
     color: #000000;
     font-family:'DM Serif Display', sans-serif;
 }
-.conatin #dp1{
-    width:500px;
-    margin-right: -500px;
-    margin-bottom: -120px;
-    border: 1px solid black;
+.contain{
+    /* padding: 20px;    */
 }
 .out{
     display: flex;
-    gap: 180px;
+    gap: 150px;
 }
 
 #user li a{
     font-size: 23px;
     text-decoration: none;
     color: #000000;
-    margin-right: -100px;
+    /* margin-right: -100px; */
 }
 #more{
     width: 100%;
-    height: 85vh;
+    /* height: 85vh; */
     padding: 0 5%;
     display: flex;
     flex-direction: column;
@@ -226,8 +224,8 @@ nav .logo{
 
 footer{
     width: 100%;
-    height: 45vh;
-    padding: 0 5%;
+    /* height: 45vh; */
+    padding: 20px 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,7 +233,7 @@ footer{
     padding-top: 10px;
 }
 .wrapper-1{
-    width:1140px;
+    /* width:1140px; */
     margin: auto;
     display: flex;
     justify-content: center;
@@ -264,6 +262,7 @@ footer{
     font-size: 28px;
     margin-bottom: 15px;
     color: #000000;
+    text-align: center;
 }
 .footer-center1 p{
     color: #000000;
@@ -290,7 +289,7 @@ footer{
 }
 .list li::before{
     content: '';
-    position: absolute;
+    /* position: absolute; */
     transform: translate(-50%,-50%);
     left: 50%;
     top: 100%;
@@ -301,4 +300,44 @@ footer{
 }
 .list li:hover::before{
     width: 70px;
+}
+
+@media screen and (max-width: 800px){
+    #dp{
+        display: none;
+    }
+    nav > ul{
+        overflow: scroll;
+    }
+    .feature{
+        display: flex;
+        height: fit-content;
+
+    }
+    /* #fea1img, #fea2img{
+       
+    } */
+
+    .container{
+        gap:20px;
+        flex-direction: column;
+    }
+    .out{
+        height: fit-content;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box3-1 img {
+        height: 250px;
+        width: auto;
+    }
+     .footer-center{
+        display: none;
+    }
 }

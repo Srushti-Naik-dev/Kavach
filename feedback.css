@@ -78,7 +78,7 @@ footer{
     padding-top: 10px;
 }
 .wrapper-1{
-    width:1140px;
+    /* width:1140px; */
     margin: auto;
     display: flex;
     justify-content: center;

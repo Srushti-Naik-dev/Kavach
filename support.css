@@ -194,3 +194,17 @@ footer{
     width: 70px;
 }
 
+
+
+@media screen and (max-width: 800px){
+    .footer-center{
+        display: none;
+    }
+    .wrapper-1{
+        width: auto;
+    }
+    nav > ul{
+        overflow: scroll;
+    }
+    
+}
