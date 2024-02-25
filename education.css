@@ -13,12 +13,13 @@ nav{
     /* position:absolute; */
     top:0;
     left: 0;
-    padding: 20px 9%;
-    border-radius: 0px 0px 100px 0px;
+    padding: 15px 9%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    background-color: #37517E;
+    z-index: 1;
 }
 nav ul{
     display: inline-flex;
@@ -49,7 +50,7 @@ nav .logo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:url(./img/back3.png);
+    background-color: #f8f9fa;
     background-size: cover;
     
 }

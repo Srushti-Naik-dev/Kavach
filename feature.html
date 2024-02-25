@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavach-Extension</title>
+    <link rel="stylesheet" href="feature.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:ital,wght@1,400;1,500&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Lora:ital,wght@1,400;1,500&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+            <nav>
+                <img src="./img/logo.jpeg" alt="Kavach" class="logo">
+                
+                <ul>
+                    <li><a href="index.html" id="hm">Home</a></li>
+                    <li><a href="feature.html" id="feature">Features</a></li>
+                    <li><a href="education.html" id="Education">Education</a></li>
+                    <li><a href="support.html" id="support">Support</a></li>
+                  
+                   <li><a href="feedback.html" id="feedback">Feedback</a></li>
+                </ul>
+            </nav>
+            <section id="home">
+                <h3 class="heading">Features</h3>
+        <div class="container">
+            <div class="main-video">
+                <div class="video">
+                <video src="./img/detection.mp4" controls muted autoplay></video>
+                <h3 class="title">01. Detection of Dark Patterns</h3>
+         </div>
+        
+        <div class="video-list">
+            <div class="vid active">
+                <video src="./img/Analysis.mp4"muted></video>
+                <h3 class="title">02.Visualtion of Depicted Dark Patterns</h3>
+            </div>
+        </div>
+            <div class="vid">
+                <video src="./img/Customization.mp4" muted></video>
+                <h3 class="title">03.User Customization</h3>
+            </div>
+        
+        
+            <div class="vid">
+                <video src="./img/lang.mp4" muted ></video>
+                <h3 class="title">04.Multilingual Support</h3>
+            </div>
+      
+        
+            <div class="vid">
+                <video src="./img/ad.mp4"muted></video>
+                <h3 class="title">05.Highlighting of Ad</h3>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    </section>
+    <footer>
+        <div class="wrapper-1">
+            <div class="footer-center">
+                <h3>REFERENCES</h3>
+                <p>GDPR Guidelines: <a target="_blank" href="https://gdpr-info.eu/">https://gdpr-info.eu/</a></p>
+                <p>CCPA Act: <a target="_blank" href="https://oag.ca.gov/privacy/ccpa">https://oag.ca.gov/privacy/ccpa</a></p>
+                <p>Dark Patterns: <a target="_blank" href="https://www.codilar.com/dark-pattern-and-its-impact-on-ecommerce/">https://www.codilar.com/dark-pattern-and-its-impact-on-ecommerce/</a></p>
+                <p>Awareness about Dark Patterns: <a target="_blank" href="https://www.mondaq.com/india/dodd-frank-consumer-protection-act/1379670/understanding-dark-patterns-guidelines-for-consumer-protection#:~:text=The%20term%20'Dark%20Patterns'%20has,by%20subverting%20or%20impairing%20the">https://www.mondaq.com/india/dodd-frank-consumer-protection-act/1379670/understanding-dark-patterns-guidelines-for-consumer-protection#:~:text=The%20term%20'Dark%20Patterns'%20has,by%20subverting%20or%20impairing%20the</a></p>
+            </div>
+            <div class="footer-center1">
+                <h3>QUICK LINKS</h3>
+                <ul class="list">
+                    <li>Features</li>
+                    <li>Education</li>
+                    <li>Support</li>
+                    <li>Updates</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="bottom-bar">
+            <p></p>
+        </div>
+    </footer>
+</div>
+    <script>
+        let listVd=document.querySelector(".video-list .vid");
+        let mainVd=document.querySelector(".main-video video");
+        let title=document.querySelector(".main-video .title");
+
+        listVd.forEach(video=>{
+            video.onclick=()=>{
+                listVd.forEach(vid=>vid.classList.remove("active"));
+                video.classList.add("active");
+                if(video.classList.contains("active")){
+                    let src=video.children[0].getAttribute('src');
+                    mainVd.src=src;
+                    let text=video.children[0].innerHTML;
+                    title.innerHTML=text;
+                };
+            };
+        });
+    </script>
+</body>
+</html>
