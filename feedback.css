@@ -13,12 +13,11 @@ nav{
     position:absolute;
     top:0;
     left: 0;
-    padding: 20px 9%;
-    border-radius: 0px 0px 100px 0px;
+    padding: 15px 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+   background-color: #37517E;
 }
 nav ul{
     display: inline-flex;
@@ -32,7 +31,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color:#000000;
+    color:#fff;
     font-size: 20px;
 }
 
@@ -50,7 +49,7 @@ nav .logo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:url(./img/back3.png);
+    background-color: #f8f9fa;
     background-size: cover;
     
 }
@@ -150,3 +149,11 @@ iframe {
     height: 100%; 
     width: 100%;
 }
+.bottom-bar{
+    background-color: #37517E;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    color: white;
+ }

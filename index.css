@@ -33,7 +33,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color:#000000;
+    color:#fff;
     font-size: 20px;
 }
 
@@ -77,18 +77,18 @@ nav .logo{
 }
 .box #h1{
     font-size: 50px;
-    color: #000000;
+    color: #fff;
     font-family:'DM Serif Display', sans-serif;
 }
 .box span{
     font-size: 24px;
-    color: #000000;
+    color: #fff;
     padding:0px 0px 10px 0px;
     font-family:'DM Serif Display', sans-serif;
 }
 .box p{
     font-size: 20px;
-    color: #000000;
+    color: #fff;
     font-weight: 100;
     
 }
@@ -108,7 +108,7 @@ nav .logo{
     font-size: 50px;
     /* margin-top: -380px; */
     padding: 20px 20px 20px 20px;
-    color: #000000;
+    color: #37517E;
     font-family:'DM Serif Display', sans-serif;
 }
 
@@ -137,7 +137,7 @@ nav .logo{
     font-size: 50px;
     margin-top: 20px;
     padding: 0px 0px 40px 0px;
-    color: #000000;
+    color: #37517E;
     font-family:'DM Serif Display', sans-serif;
 }
 #dp1{
@@ -158,7 +158,7 @@ nav .logo{
 }
 #more{
     width: 100%;
-    height: 85vh; 
+    height: 75vh; 
     padding: 0 5%;
     display: flex;
     flex-direction: column;
@@ -166,35 +166,37 @@ nav .logo{
     align-items: center;
     background-color: #f8f9fa;
 }
-#more span{
-    font-size: 40px;
-    color: #000000;
-    padding:0px 0px 10px 0px;
-    font-family:'DM Serif Display', sans-serif;
+#more .contain{
+    text-align: center;
+    display: inline-flex;
 }
-.wrapper{
-    display: flex;
-    height: 88%;
-    align-items: center;
-    gap: 100px;
+#more .head-1{
+    font-size: 50px;
+    margin-top: -200px;
+    padding: 0px 0px 20px 0px;
+    color: #37517E;
+    font-family:'DM Serif Display', sans-serif;
+    justify-content: center;
+}
+#more .contain .box2 {
+   padding: 15px;
+   margin:6px;
+   color: rgb(0, 0, 0);
+   border-radius: 50px;
+   margin-bottom: -180px;
+   cursor: pointer;
+   transition: transform 0.5s;
 }
 
-.box3 p{
-    padding:30px 0px 0px 0px;
-    color: #000000;
-    font-size: 20px;
+#more .contain .box2 img{
+   height: 260px;
+   width:260px;
+   display: inline-block;
+   transition: transform 0.5s;
+   
 }
-.box3{
-    margin-left: 20px;
-    flex-basis: 50%;
-}
-.box3-1 img{
-    width: 500px;
-    height: 400px;
-}
-.box3 a{
-    text-decoration: none;
-    color: #000000;
+.box2:hover{
+    transform: translateY(-10px);
 }
 
 footer{

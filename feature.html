@@ -27,27 +27,31 @@
                 </ul>
             </nav>
             <section id="home">
-                <h3 class="heading">Features</h3>
+                <h3 class="heading">FEATURES</h3>
         <div class="container">
             <div class="main-video">
                 <div class="video">
                 <video src="./img/detection.mp4" controls muted autoplay></video>
                 <h3 class="title">01. Detection of Dark Patterns</h3>
          </div>
-        
-        <div class="video-list">
+        </div>
+         <div class="video-list">
             <div class="vid active">
+                <video src="./img/detection.mp4" muted></video>
+                <h3 class="title">01. Detection of Dark Patterns</h3>
+            </div>
+            <div class="vid ">
                 <video src="./img/Analysis.mp4"muted></video>
                 <h3 class="title">02.Visualtion of Depicted Dark Patterns</h3>
             </div>
-        </div>
-            <div class="vid">
+        
+             <div class="vid">
                 <video src="./img/Customization.mp4" muted></video>
                 <h3 class="title">03.User Customization</h3>
             </div>
         
         
-            <div class="vid">
+             <div class="vid">
                 <video src="./img/lang.mp4" muted ></video>
                 <h3 class="title">04.Multilingual Support</h3>
             </div>
@@ -57,8 +61,8 @@
                 <video src="./img/ad.mp4"muted></video>
                 <h3 class="title">05.Highlighting of Ad</h3>
             </div>
-        
         </div>
+        
     </div>
     
     
@@ -84,13 +88,14 @@
             </div>
             
         </div>
-        <div class="bottom-bar">
-            <p></p>
-        </div>
+        
     </footer>
+    <div class="bottom-bar">
+        <p>&#169 KAVACH 2024</p>
+    </div>
 </div>
     <script>
-        let listVd=document.querySelector(".video-list .vid");
+        let listVd=document.querySelectorAll(".video-list .vid");
         let mainVd=document.querySelector(".main-video video");
         let title=document.querySelector(".main-video .title");
 
@@ -101,7 +106,7 @@
                 if(video.classList.contains("active")){
                     let src=video.children[0].getAttribute('src');
                     mainVd.src=src;
-                    let text=video.children[0].innerHTML;
+                    let text=video.children[1].innerHTML;
                     title.innerHTML=text;
                 };
             };
