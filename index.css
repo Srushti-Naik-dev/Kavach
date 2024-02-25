@@ -144,9 +144,7 @@ nav .logo{
     width:300px;
     height: 350px;
 }
-.contain{
-    /* padding: 20px;    */
-}
+
 .out{
     display: flex;
     gap: 150px;
